@@ -6,7 +6,7 @@
 #    By: AleXwern <AleXwern@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/30 16:09:13 by anystrom          #+#    #+#              #
-#    Updated: 2021/01/26 14:10:37 by AleXwern         ###   ########.fr        #
+#    Updated: 2021/01/27 17:04:40 by AleXwern         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,7 @@ STOP = \033[0m
 all: $(NAME)
 
 %.o:%.c
-	@gcc -Wall -Wextra -Werror $(FLG) -I $(INCLS) -o $@ -c $<
+	@gcc -Wall -Wextra $(FLG) -I $(INCLS) -o $@ -c $<
 	@echo "Compiling Libft -> $(GREEN)$@$(STOP)"
 
 $(NAME): $(LIBFT_O) $(LIBAX_O)
